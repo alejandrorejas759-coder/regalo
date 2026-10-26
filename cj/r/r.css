@@ -1,0 +1,331 @@
+@media (max-width: 700px) {
+    body.home {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        overflow-x: hidden;
+    }
+}
+.home {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("../imagenes/Bajo\ un\ cielo\ de\ estrellas.png");
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #080b20;
+    color: white;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+}
+.menu a {
+    color: #e4e2ff;
+    text-decoration: none;
+    font-size: clamp(13px, 2vw, 16px);
+    transition: color 0.3s ease;
+}
+.menu a:hover,
+.menu a.activo {
+    color: #c9a7ff;
+}
+
+.you {
+    position: relative;
+    isolation: isolate;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #080b20;
+    color: white;
+}
+
+.you::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+
+    background-image: url("../imagenes/lucid-origin_Prompt_para_Leonardo_AI_A_breathtaking_romantic_night_sky_background_for_a_perso-0.jpg");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+}
+
+.distribucion {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+    gap: 20px;
+    width: 100%;
+    align-items: start;
+}
+
+.fotos-gato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.fotos-gato img {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: 160px;
+    object-fit: contain;
+    object-position: center;
+    border: none;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.contenido-central {
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-wrap: anywhere;
+    font-size: x-small;
+}
+
+.contenido-central p {
+    max-width: 100%;
+}
+
+.lateral-derecho {
+    min-width: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .you {
+        background-color: #080b20;
+        background-image: url("../imagenes/lucid-origin_Prompt_para_Leonardo_AI_A_breathtaking_romantic_night_sky_background_for_a_perso-0.jpg");
+        background-size: auto 100vh;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .you::before {
+        display: none;
+    }
+
+    .distribucion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .fotos-gato,
+    .lateral-derecho {
+        display: none;
+    }
+
+    .contenido-central {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 700px) {
+    .you {
+        background-size: auto 100vh;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+}
+.video-gato {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 35px auto;
+
+    border: 1px solid rgba(201, 167, 255, 0.55);
+    border-radius: 16px;
+
+    box-shadow:
+        0 0 12px rgba(151, 100, 255, 0.18),
+        0 10px 30px rgba(0, 0, 0, 0.35);
+
+    background-color: #080b20;
+}
+body.historia {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("../imagenes/lucid-origin_A_breathtaking_romantic_night_sky_background_a_luminous_crescent_moon_shining_so-0.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.memorias {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("../imagenes/lucid-origin_A_beautiful_nostalgic_scrapbook-inspired_background_for_a_romantic_memories_webs-0.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.his{
+    padding: 20 px;
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* REPRODUCTOR MUSICAL */
+.reproductor {
+    width: 90%;
+    max-width: 420px;
+    margin: 35px auto;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+
+    background: linear-gradient(
+        145deg,
+        rgba(20, 25, 59, 0.92),
+        rgba(35, 17, 61, 0.92)
+    );
+
+    border: 1px solid rgba(190, 160, 255, 0.35);
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 25px rgba(125, 80, 220, 0.15),
+        0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.etiqueta-musica {
+    margin: 0 0 12px;
+    color: #c6b3ff;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.reproductor h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.artista {
+    margin: 8px 0 20px;
+    color: #c9c5dc;
+    font-size: 14px;
+}
+
+.reproductor audio {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.dedicatoria-musica {
+    margin: 18px 0 0;
+    color: #d9cafa;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.6;
+}
+.mensajes {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: x-large;
+}
+.confeti {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.confeti span {
+    position: absolute;
+    top: -20px;
+    left: var(--x);
+    width: 8px;
+    height: 12px;
+    background: var(--color);
+    border-radius: 2px;
+    opacity: 0;
+    animation: caer-confeti 3s ease-in forwards;
+    animation-delay: var(--retraso);
+}
+
+.confeti span:nth-child(1)  { --x: 5%;  --color: #c4a1ff; --retraso: 0s; }
+.confeti span:nth-child(2)  { --x: 12%; --color: #f8d477; --retraso: .2s; }
+.confeti span:nth-child(3)  { --x: 20%; --color: #ff9dbb; --retraso: .1s; }
+.confeti span:nth-child(4)  { --x: 27%; --color: #a6e3e9; --retraso: .5s; }
+.confeti span:nth-child(5)  { --x: 34%; --color: #c4a1ff; --retraso: .3s; }
+.confeti span:nth-child(6)  { --x: 42%; --color: #f8d477; --retraso: .6s; }
+.confeti span:nth-child(7)  { --x: 49%; --color: #ff9dbb; --retraso: .2s; }
+.confeti span:nth-child(8)  { --x: 56%; --color: #a6e3e9; --retraso: .4s; }
+.confeti span:nth-child(9)  { --x: 63%; --color: #c4a1ff; --retraso: .1s; }
+.confeti span:nth-child(10) { --x: 70%; --color: #f8d477; --retraso: .5s; }
+.confeti span:nth-child(11) { --x: 77%; --color: #ff9dbb; --retraso: .3s; }
+.confeti span:nth-child(12) { --x: 84%; --color: #a6e3e9; --retraso: .6s; }
+.confeti span:nth-child(13) { --x: 92%; --color: #c4a1ff; --retraso: .2s; }
+.confeti span:nth-child(14) { --x: 97%; --color: #f8d477; --retraso: .4s; }
+.confeti span:nth-child(15) { --x: 16%; --color: #a6e3e9; --retraso: .8s; }
+.confeti span:nth-child(16) { --x: 31%; --color: #ff9dbb; --retraso: .9s; }
+.confeti span:nth-child(17) { --x: 46%; --color: #c4a1ff; --retraso: .7s; }
+.confeti span:nth-child(18) { --x: 60%; --color: #f8d477; --retraso: 1s; }
+.confeti span:nth-child(19) { --x: 74%; --color: #a6e3e9; --retraso: .8s; }
+.confeti span:nth-child(20) { --x: 88%; --color: #ff9dbb; --retraso: 1s; }
+.confeti span:nth-child(21) { --x: 9%;  --color: #f8d477; --retraso: 1.1s; }
+.confeti span:nth-child(22) { --x: 25%; --color: #a6e3e9; --retraso: 1.2s; }
+.confeti span:nth-child(23) { --x: 39%; --color: #ff9dbb; --retraso: 1.1s; }
+.confeti span:nth-child(24) { --x: 53%; --color: #c4a1ff; --retraso: 1.3s; }
+.confeti span:nth-child(25) { --x: 67%; --color: #f8d477; --retraso: 1.2s; }
+.confeti span:nth-child(26) { --x: 81%; --color: #a6e3e9; --retraso: 1.4s; }
+.confeti span:nth-child(27) { --x: 94%; --color: #ff9dbb; --retraso: 1.3s; }
+.confeti span:nth-child(28) { --x: 37%; --color: #f8d477; --retraso: .9s; }
+.confeti span:nth-child(29) { --x: 58%; --color: #ff9dbb; --retraso: 1.5s; }
+.confeti span:nth-child(30) { --x: 72%; --color: #c4a1ff; --retraso: 1.4s; }
+.confeti span:nth-child(31) { --x: 3%;  --color: #a6e3e9; --retraso: 1.5s; }
+.confeti span:nth-child(32) { --x: 90%; --color: #f8d477; --retraso: 1.6s; }
+
+@keyframes caer-confeti {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
